@@ -1,16 +1,54 @@
-# React + Vite
+Album Tracker
+Album Tracker is a web-based music discovery and collection management application built with React. It allows users to search for music albums, explore album details, listen to available previews, organize their personal music collection, and receive AI-powered album recommendations based on their saved albums and ratings.
+Live Website
+https://album-tracker-8jnxg7ukh-fel23.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Screenshots
+Add screenshots of the following:
+Album search results
+Album details page
+AI recommendations page
+Features
+Search for albums using the iTunes API.
+View album information, cover art, and track listings.
+Play available 30-second music previews.
+Control playback using the mini player.
+Save albums to a personal collection.
+Manage album status, ratings, and personal notes.
+Filter and sort saved albums.
+Save collection data using browser local storage.
+Access Deezer album playback when a matching album is available.
+Generate AI-powered album recommendations based on saved albums and ratings.
+Tech Stack
+React
+Vite
+JavaScript
+CSS
+Context API
+iTunes Search API
+Deezer API
+Google Gemini API
+Local Storage
+GitHub
+Vercel
+How to Run Locally
+Clone the repository:
+ git clone https://github.com/felicityrosebaccol-prog/album-tracker.git
+Navigate to the project folder:
+ cd album-tracker
+Install dependencies:
+ npm install
+Create a .env.local file in the project root and add your Gemini API key:
+ GEMINI_API_KEY=your_api_key_here
+Start the development server:
+ npm run dev
+Open the local URL displayed in your terminal.
+Limitations
+iTunes provides 30-second previews rather than full tracks.
+The personal collection is stored in the browser’s local storage.
+Deezer playback may require a user login and an eligible subscription depending on the user’s country.
+AI recommendations require a valid Gemini API key and available API access.
+Privacy Note
+The AI recommendation feature sends saved album titles, artists, ratings, and statuses to Google’s Gemini API to generate recommendations. Personal notes are not sent.
+Disclaimer
+This project is developed for educational purposes and is not affiliated with, endorsed by, or sponsored by Apple, Spotify, Deezer, or Google.
